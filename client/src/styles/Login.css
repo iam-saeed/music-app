@@ -1,0 +1,16 @@
+
+
+.login {
+    display: flex;
+    align-items: center;
+    margin-top: 40vh;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+
+input[type="text"] {
+    margin-bottom: 10px;
+}

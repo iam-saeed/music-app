@@ -25,7 +25,7 @@ const Dashboard = ({ code }) => {
 
     useEffect(() => {
         if(!playingTrack) return 
-        
+
         axios.get('http://localhost:5000/lyrics', {
             params: {
                 track: playingTrack.title,
