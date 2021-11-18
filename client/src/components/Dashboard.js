@@ -4,6 +4,7 @@ import { Container, Form } from 'react-bootstrap'
 import Player from './Player'
 import TrackSearchResult from './TrackSearchResult'
 import useAuth from '../hooks/useAuth'
+import '../styles/dashboard.css'
 import SpotifyWebApi from 'spotify-web-api-node';
 
 const spotifyWebApi = new SpotifyWebApi({
@@ -72,8 +73,8 @@ const Dashboard = ({ code }) => {
                 return <TrackSearchResult track={track} key={track.uri} chooseTrack={chooseTrack} />
             })}
             {searchResults.length === 0 && (
-                <div className="text-center" stlye={{ whiteSpace: 'pre' }}>
-                    {lyrics}
+                <div className="text-center" stlye={{  }}>
+                    <p>{lyrics}</p>
                 </div>
             )}
         </div>

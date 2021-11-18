@@ -9,12 +9,13 @@ const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=dd765052203b4
 
 const Login = () => {
     return (
-        <>
-
-        <Container className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-            <a className="btn btn-success btn-lg" href={AUTH_URL} >Login With Spotify</a>
-        </Container>
-        </>
+        <section id="home_login">
+            <div className="login_form">
+                <h1 id="login_text">Music Stream</h1>
+                <p id="login_text">You must have a premium Spotify account to use this application.</p>
+            <a id="login_text" className="btn btn-success btn-lg" href={AUTH_URL} >Login With Spotify</a>
+            </div>
+        </section>
     )
 }
 
